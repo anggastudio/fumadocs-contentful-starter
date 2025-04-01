@@ -15,7 +15,6 @@ export default async function Page(props: { params: Promise<{ slug?: string[] }>
 	if (!page) notFound();
 
 	const MDXContent = page.data.body;
-	console.log(page);
 	return (
 		<DocsPage
 			toc={page.data.toc}
