@@ -2,5 +2,6 @@
 	"title": "Version 2.x",
 	"description": "this is the latest version",
 	"root": true,
-	"icon": "User"
+	"icon": "User",
+	"defaultOpen": true
 }
