@@ -2,6 +2,7 @@ import { docs } from '@/.source';
 import { loader } from 'fumadocs-core/source';
 import { createElement } from "react";
 import { icons } from "lucide-react";
+import { createOpenAPI } from "fumadocs-openapi/server";
 
 // `loader()` also assign a URL to your pages
 // See https://fumadocs.vercel.app/docs/headless/source-api for more info
@@ -13,4 +14,5 @@ export const source = loader({
 	},
 	source: docs.toFumadocsSource(),
 });
+export const openapi = createOpenAPI();
 

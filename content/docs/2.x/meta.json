@@ -1,7 +1,17 @@
 {
-	"title": "Version 2.x",
-	"description": "this is the latest version",
+	"title": "2.x",
+	"description": "This version is still good, but better to upgrade",
+	"icon": "Calendar",
 	"root": true,
-	"icon": "User",
-	"defaultOpen": true
+	"pages": [
+		"---Introduction---",
+		"index",
+		"release-notes",
+		"---Usage---",
+		"getting-started",
+		"---Grouping---",
+		"folder",
+		"outside-folder",
+		"check-meta-json"
+	]
 }

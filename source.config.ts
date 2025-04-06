@@ -1,12 +1,21 @@
-import { defineDocs, defineConfig } from 'fumadocs-mdx/config';
+import { defineConfig, defineDocs } from "fumadocs-mdx/config";
 
 export const docs = defineDocs({
 	dir: ["content/docs", "content/docs/*"],
 });
 
 export default defineConfig({
-	mdxOptions: {
-		// MDX options
-	},
 	lastModifiedTime: "git",
+	mdxOptions: {
+		rehypeCodeOptions: {
+			lazy: true,
+			experimentalJSEngine: true,
+			langs: ["ts", "js", "html", "tsx", "mdx"],
+			inline: "tailing-curly-colon",
+			themes: {
+				light: "catppuccin-latte",
+				dark: "catppuccin-mocha",
+			},
+		},
+	},
 });

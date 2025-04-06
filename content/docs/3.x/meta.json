@@ -1,7 +1,7 @@
 {
-	"title": "1.x",
-	"description": "This version is obsolete",
-	"icon": "CalendarX",
+	"title": "3.x",
+	"description": "This version is not the latest but still recent",
+	"icon": "CalendarCheck2",
 	"root": true,
 	"pages": [
 		"---Introduction---",
