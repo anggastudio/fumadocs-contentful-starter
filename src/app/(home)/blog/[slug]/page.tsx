@@ -8,6 +8,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { File, Files, Folder } from "fumadocs-ui/components/files";
 import { Tab, Tabs } from "fumadocs-ui/components/tabs";
 import { createMetadata } from "@/lib/metadata";
+import { Popup, PopupContent, PopupTrigger } from "fumadocs-twoslash/ui";
 
 export default async function Page(props: {
 	params: Promise<{ slug: string }>;
@@ -59,13 +60,18 @@ export default async function Page(props: {
 							Folder,
 							Tabs,
 							Tab,
+							Popup,
+							PopupContent,
+							PopupTrigger,
 						}}
 					/>
 				</div>
 				<div className="flex flex-col gap-4 border-l p-4 text-sm lg:w-[250px]">
 					<h2>Sidebar</h2>
 					<div>
-						<p className="mb-1 text-sm text-fd-muted-foreground">Table of content should be here</p>
+						<p className="mb-1 text-sm text-fd-muted-foreground">
+							Table of content should be here
+						</p>
 					</div>
 				</div>
 			</article>

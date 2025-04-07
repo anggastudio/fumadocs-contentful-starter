@@ -7,9 +7,13 @@ import {
 } from "fumadocs-ui/page";
 import { notFound } from "next/navigation";
 import defaultMdxComponents, { createRelativeLink } from "fumadocs-ui/mdx";
-import { getTableOfContents } from "fumadocs-core/server";
+import { Popup, PopupContent, PopupTrigger } from "fumadocs-twoslash/ui";
+import { Tab, Tabs } from "fumadocs-ui/components/tabs";
+import { File, Files, Folder } from "fumadocs-ui/components/files";
 
-export default async function Page(props: { params: Promise<{ slug?: string[] }> }) {
+export default async function Page(props: {
+	params: Promise<{ slug?: string[] }>;
+}) {
 	const params = await props.params;
 	const page = source.getPage(params.slug);
 	if (!page) notFound();
@@ -33,6 +37,14 @@ export default async function Page(props: { params: Promise<{ slug?: string[] }>
 						// this allows you to link to other pages with relative file paths
 						a: createRelativeLink(source, page),
 						// you can add other MDX components here
+						File,
+						Files,
+						Folder,
+						Tabs,
+						Tab,
+						Popup,
+						PopupContent,
+						PopupTrigger,
 					}}
 				/>
 			</DocsBody>

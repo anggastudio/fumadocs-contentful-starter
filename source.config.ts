@@ -4,6 +4,11 @@ import {
 	defineDocs,
 	frontmatterSchema,
 } from "fumadocs-mdx/config";
+import { transformerTwoslash } from "fumadocs-twoslash";
+import { rehypeCodeDefaultOptions } from "fumadocs-core/mdx-plugins";
+import { remarkInstall } from "fumadocs-docgen";
+import rehypeKatex from "rehype-katex";
+import remarkMath from "remark-math";
 import { z } from "zod";
 
 export const docs = defineDocs({
@@ -29,9 +34,15 @@ export default defineConfig({
 			langs: ["ts", "js", "html", "tsx", "mdx"],
 			inline: "tailing-curly-colon",
 			themes: {
-				light: "catppuccin-latte",
-				dark: "catppuccin-mocha",
+				light: "github-light",
+				dark: "github-dark",
 			},
+			transformers: [
+				...(rehypeCodeDefaultOptions.transformers ?? []),
+				transformerTwoslash(),
+			],
 		},
+		remarkPlugins: [remarkMath, remarkInstall],
+		rehypePlugins: (v) => [rehypeKatex, ...v],
 	},
 });
