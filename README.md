@@ -1,26 +1,12 @@
-# fumadocs-try-1
+# Quick Start
 
-This is a Next.js application generated with
-[Create Fumadocs](https://github.com/fuma-nama/fumadocs).
+clone this repo, and there you go, just focus on creating content
 
-Run development server:
+## Demo
 
-```bash
-npm run dev
-# or
-pnpm dev
-# or
-yarn dev
-```
+here: https://github.com/anggastudio/fumadocs-contentful-starter
 
-Open http://localhost:3000 with your browser to see the result.
 
-## Learn More
+---
 
-To learn more about Next.js and Fumadocs, take a look at the following
-resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
-  features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [Fumadocs](https://fumadocs.vercel.app) - learn about Fumadocs
+PS: I actually would be happy if Fuma himself can make cli command to create contentful starter
