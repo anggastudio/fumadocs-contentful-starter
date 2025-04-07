@@ -4,7 +4,7 @@ clone this repo, and there you go, just focus on creating content
 
 ## Demo
 
-here: https://github.com/anggastudio/fumadocs-contentful-starter
+here: https://fumadocs-contentful-starter.anggastudio.dev/
 
 
 ---
