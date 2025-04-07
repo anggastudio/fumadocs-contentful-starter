@@ -14,19 +14,19 @@ export const linkItems: LinkItemType[] = [
 		active: "nested-url",
 	},
 	{
-		text: "Showcase",
-		url: "/showcase",
-		icon: <LayoutTemplate />,
-		active: "url",
-	},
-	{
 		text: "Sponsors",
 		url: "/sponsors",
 		icon: <Heart />,
 	},
 	{
+		text: "Sample Page",
+		url: "/sample-page",
+		icon: <LayoutTemplate />,
+		active: "url",
+	},
+	{
 		type: "icon",
-		url: "https://github.com/fuma-nama/fumadocs",
+		url: "https://github.com/anggastudio/fumadocs-contentful-starter",
 		text: "Github",
 		icon: (
 			<svg role="img" viewBox="0 0 24 24" fill="currentColor">

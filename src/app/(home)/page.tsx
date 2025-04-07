@@ -40,7 +40,7 @@ export default function HomePage() {
 				>
 					/docs
 				</Link>{" "}
-				and see the exmaple of the documentation.
+				and see the example of the documentation.
 			</p>
 			<h2 className="mb-4 text-2xl font-bold">Why creating this?</h2>
 			<p className="mb-8 text-fd-muted-foreground">
