@@ -10,7 +10,7 @@ import Link, { type LinkProps } from "next/link";
 import Image from "next/image";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import Spot from "@/public/spot.png";
+import Spot from "public/spot.png";
 
 export default function DocsPage(): React.ReactElement {
 	return (

@@ -1,7 +1,7 @@
 import { Building2, Github } from "lucide-react";
 import Image from "next/image";
 import Link, { LinkProps } from "next/link";
-import Spot from "@/public/spot.png";
+import Spot from "public/spot.png";
 
 export default function HomePage() {
 	return (
