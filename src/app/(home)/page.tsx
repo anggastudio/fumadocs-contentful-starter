@@ -4,6 +4,7 @@ import Link, { LinkProps } from "next/link";
 import Spot from "public/spot.png";
 import QuickInstallScreenshot from "public/themes/ocean.png";
 import FumadocsSimpleStarter from "public/fumadocs-simple-starter.png";
+import FumadocsContentful from "public/fumadocs-contentful-starter-quickstart.png";
 
 export default function HomePage() {
 	return (
@@ -23,14 +24,15 @@ export default function HomePage() {
 					alt="spot"
 					src={Spot}
 					sizes="100vw"
-					className="size-full min-w-[800px] max-w-fd-container"
+					className="size-full max-w-fd-container"
 					priority
 				/>
 			</div>
-			<h1 className="mb-4 text-2xl font-bold">What is this?</h1>
+			<p className="mb-4 text-xs text-fd-muted-foreground">What is this?</p>
+			<h1 className="mb-4 text-2xl font-bold">Fumadocs Contentful Starter</h1>
 			<p className="mb-4 text-fd-muted-foreground">
 				This is a documentation or knowledge base website created using
-				Fumadocs.
+				Fumadocs, but with content.
 			</p>
 			<p className="mb-8 text-fd-muted-foreground">
 				You can open{" "}
@@ -42,6 +44,13 @@ export default function HomePage() {
 				</Link>{" "}
 				and see the example of the documentation.
 			</p>
+			<Image
+				alt="spot"
+				src={FumadocsContentful}
+				sizes="100vw"
+				className="mx-auto size-full max-w-7xl"
+				priority
+			/>
 			<h2 className="mb-4 text-2xl font-bold">Why creating this?</h2>
 			<p className="mb-8 text-fd-muted-foreground">
 				This is a demo to show you the power of Fumadocs in creating
@@ -59,20 +68,20 @@ export default function HomePage() {
 				alt="spot"
 				src={FumadocsSimpleStarter}
 				sizes="100vw"
-				className="rounded-xl mx-auto size-full min-w-[800px] max-w-7xl border-8 border-fd-primary"
+				className="mx-auto size-full max-w-7xl"
 				priority
 			/>
-			<p className="mt-8 mb-2 text-fd-muted-foreground">
-				I know you want something like this:
+			<p className="text-fd-muted-foreground">
+				That's not even close to the beautiful Fumadocs's docs itself.
 			</p>
-			<p className="mb-2 text-fd-muted-foreground">
-				~~~like on the fumadocs's docs~~~
+			<p className="text-fd-muted-foreground">
+				I know you want something like this:
 			</p>
 			<Image
 				alt="spot"
 				src={QuickInstallScreenshot}
 				sizes="100vw"
-				className="mx-auto size-full min-w-[800px] max-w-fd-container"
+				className="mx-auto size-full max-w-fd-container"
 				priority
 			/>
 			<p className="mb-4 text-fd-muted-foreground">
@@ -86,7 +95,7 @@ export default function HomePage() {
 			<p className="mb-4 text-fd-muted-foreground">
 				and you can have it too, get it here:
 			</p>
-			<div className="mb-8 mx-auto w-2xl grid grid-cols-1 gap-4 text-left">
+			<div className="mb-8 mx-auto px-4 w-full md:w-xl grid grid-cols-1 gap-4 text-left">
 				<Item href="https://github.com/anggastudio/fumadocs-contentful-starter">
 					<div className="flex items-center gap-4">
 						<Icon>
@@ -111,7 +120,7 @@ export default function HomePage() {
 			<p className="text-fd-muted-foreground">
 				The rest of the Fumadocs documentation:
 			</p>
-			<div className="mx-auto w-2xl mt-4 grid grid-cols-1 gap-4 text-left">
+			<div className="mx-auto w-2xl mt-4 px-4 w-full md:w-xl grid grid-cols-1 gap-4 text-left">
 				<Item href="https://github.com/fuma-nama/fumadocs">
 					<div className="flex items-center gap-4">
 						<Icon>
