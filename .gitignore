@@ -1,16 +1,18 @@
-# deps
+# dependencies
 /node_modules
+package-lock.json
 
 # generated content
 .contentlayer
 .content-collections
 .source
 
-# test & build
+# testing & build
 /coverage
 /.next/
 /out/
 /build
+/dist
 *.tsbuildinfo
 
 # misc
@@ -21,8 +23,27 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.yarn-integrity
 
-# others
+# local env files
+.env
 .env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Vercel
 .vercel
 next-env.d.ts
+
+# Optional eslint cache
+.eslintcache
